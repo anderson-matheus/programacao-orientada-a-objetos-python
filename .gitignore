@@ -2,3 +2,4 @@
 .ropeproject/
 modulo/*.pyc
 *.txt
+*.log
