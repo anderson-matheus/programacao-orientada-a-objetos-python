@@ -3,3 +3,4 @@
 modulo/*.pyc
 *.txt
 *.log
+.cache/
