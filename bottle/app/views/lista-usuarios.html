@@ -1,0 +1,14 @@
+% rebase('base.html', title='Lista usuários')
+<div class="alert alert-info">
+  Lista de usuários do sistema
+</div>
+
+<ul class="list-group">
+  % if acesso:
+    % for usuario in usuarios:
+    <li class="list-group-item">{{ usuario.username }}</li>
+    % end
+  % else:
+    <li class="list-group-item">Acesso negado</li>
+  %end
+</ul>

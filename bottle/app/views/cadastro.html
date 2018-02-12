@@ -1,0 +1,22 @@
+% rebase('base.html', title='Fazer cadastro')
+<form action="/cadastro" method="post">
+  <div class="form-group">
+    <label>Escolha o Username</label>
+    <input name="username" type="text" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label>Escolha a Senha</label>
+    <input name="password" type="password" class="form-control" />
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Cadastrar" />
+</form>
+
+
+% if existe_username:
+<br />
+<div class="alert alert-warning">
+  <p>Esse username já existe!</p>
+</div>
+%end
